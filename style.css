@@ -1,143 +1,182 @@
 
-/* =================================
-   NICEXCEL - MOBILE RESPONSIVENESS
-   ================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-@media screen and (max-width: 768px) {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #e7c9c9;
+    color: #333333;
+    line-height: 1.6;
+}
 
-    body {
-        overflow-x: hidden;
-    }
+header {
+    background-color: #5a1212;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    font-family: Britannic Bold;
+    height: 350px;
+}
+header h3{
+    font-family: Lucida Sans Unicode;
+    font-style:italic;
+}
 
-    /* HEADER */
-    header {
-        height: auto;
-        min-height: 0;
-        padding: 25px 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-    }
+header h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
 
-    /* PROFILE PICTURE */
-    header img {
-        width: 140px;
-        max-width: 45vw;
-        height: auto;
-        margin: 0;
-        margin-bottom: 5px;
-        border-radius: 50%;
-    }
+header h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 6px 0;
+    overflow-wrap: anywhere;
+}
+header img{
+    width: 300px;
+    margin-left:-1000px;
+    margin-bottom: -110px;
+    border-radius:100%;
+}
 
-    /* NAME AND PERSONAL DETAILS */
-    .names {
-        width: 100%;
-        height: auto;
-        margin: 0;
-        text-align: center;
-    }
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+}
 
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 22px;
+    border-radius: 100px;
+    border-right: 5px solid #b52828;
+    border-top: 5px solid #b52828;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+section h2 {
+    color: #b52828;
+    border-bottom: 2px solid #dce6ef;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+section h3 {
+    color: #b52828;
+}
+
+section p {
+    margin: 8px 0;
+}
+
+section ul {
+    padding-left: 25px;
+}
+
+section li {
+    margin-bottom: 7px;
+}
+
+.referee {
+    background-color: #f5f8fb;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 100px;
+}
+
+footer {
+    background-color: #5a1212;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+@media (max-width: 600px) {
     header h1 {
-        font-size: clamp(23px, 7vw, 34px);
-        margin-bottom: 10px;
-        overflow-wrap: anywhere;
+        font-size: 25px;
     }
 
     header h3 {
         font-size: 14px;
-        margin: 7px 0;
-        overflow-wrap: anywhere;
     }
 
-    /* NAVIGATION BUTTONS */
-    .buttons {
-        width: 100%;
-        height: auto;
-        margin: 12px 0 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .buttons a {
-        flex: 1 1 125px;
-        max-width: 180px;
-    }
-
-    .buttons a button {
-        width: 100%;
-        min-height: 45px;
-        height: auto;
-        margin: 0;
-        padding: 10px 5px;
-        font-size: 14px;
-        border-radius: 25px;
-    }
-
-    /* WELCOME MESSAGE */
-    marquee {
-        display: block;
-        font-size: clamp(22px, 6vw, 32px);
-        margin-top: 15px;
-    }
-
-    /* MAIN CONTENT */
     main {
         width: 94%;
-        max-width: 100%;
-        margin: 18px auto;
     }
 
-    /* CV SECTIONS */
-    section,
-    #education {
-        width: 100%;
-        padding: 18px 14px;
-        margin-bottom: 18px;
-        border-radius: 25px;
-        text-align: center;
-        overflow-wrap: anywhere;
+    section {
+        padding: 15px;
     }
-
-    section h2 {
-        font-size: 21px;
-    }
-
-    section h3 {
-        font-size: 18px;
-    }
-
-    section p {
-        font-size: 15px;
-        line-height: 1.6;
-    }
-
-    /* EDUCATION */
-    #education h2 {
-        font-size: 23px;
-    }
-
-    #education h3 {
-        font-size: 19px;
-    }
-
-    #education p {
-        font-size: 15px;
-    }
-
-    /* REFEREES */
-    .referee {
-        padding: 14px 10px;
-        border-radius: 18px;
-        overflow-wrap: anywhere;
-    }
-
-    /* FOOTER */
-    footer {
-        padding: 18px 12px;
-        font-size: 13px;
-    }
-
+}
+marquee{
+    font-size: 70px;
+    margin-top:30px;
+    font-family: Britannic Bold;
+}
+#education{
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 22px;
+    border-radius: 100px;
+    border-right: 5px solid #b52828;
+    border-top: 5px solid #b52828;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+.education h2{
+    font-size: 30px;
+}
+.education p{
+    font-size: 20px;
+}
+.education h3{
+    font-size: 25px;
+}
+.buttons{
+    width:30%;
+    margin-left: 890px;
+    margin-top: -195px;
+    margin-bottom:-5px;
+    height:150px;
+}
+.buttons a button{
+    height:50px;
+    width:150px;
+    margin-right:25px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    color: white;
+    background-color: #5a1212;
+    border: 1px solid #5a1212;
+    box-shadow: 0 3px 10px rgb(0, 0, 0);
+}
+.names{
+    margin-left:-100px;
+    width: 60%;
+    margin-left: 200px;
+    height:200px;
+    margin-top: -150px;
+}
+.buttons a button:hover{
+    background-color: white;
+    color: #5a1212;
+    box-shadow: 0 0px 0px rgb(255, 255, 255);
+}
+.buttons a button:active{
+    background-color: #b52828;
+    color: aquamarine;
 }
