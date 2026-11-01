@@ -1,0 +1,182 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #e7c9c9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #5a1212;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    font-family: Britannic Bold;
+    height: 350px;
+}
+header h3{
+    font-family: Lucida Sans Unicode;
+    font-style:italic;
+}
+
+header h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+header h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 6px 0;
+    overflow-wrap: anywhere;
+}
+header img{
+    width: 300px;
+    margin-left:-1000px;
+    margin-bottom: -110px;
+    border-radius:100%;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 22px;
+    border-radius: 100px;
+    border-right: 5px solid #b52828;
+    border-top: 5px solid #b52828;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+section h2 {
+    color: #b52828;
+    border-bottom: 2px solid #dce6ef;
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+section h3 {
+    color: #b52828;
+}
+
+section p {
+    margin: 8px 0;
+}
+
+section ul {
+    padding-left: 25px;
+}
+
+section li {
+    margin-bottom: 7px;
+}
+
+.referee {
+    background-color: #f5f8fb;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 100px;
+}
+
+footer {
+    background-color: #5a1212;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    header h3 {
+        font-size: 14px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+marquee{
+    font-size: 70px;
+    margin-top:30px;
+    font-family: Britannic Bold;
+}
+#education{
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 22px;
+    border-radius: 100px;
+    border-right: 5px solid #b52828;
+    border-top: 5px solid #b52828;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+.education h2{
+    font-size: 30px;
+}
+.education p{
+    font-size: 20px;
+}
+.education h3{
+    font-size: 25px;
+}
+.buttons{
+    width:30%;
+    margin-left: 890px;
+    margin-top: -195px;
+    margin-bottom:-5px;
+    height:150px;
+}
+.buttons a button{
+    height:50px;
+    width:150px;
+    margin-right:25px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    color: white;
+    background-color: #5a1212;
+    border: 1px solid #5a1212;
+    box-shadow: 0 3px 10px rgb(0, 0, 0);
+}
+.names{
+    margin-left:-100px;
+    width: 60%;
+    margin-left: 200px;
+    height:200px;
+    margin-top: -150px;
+}
+.buttons a button:hover{
+    background-color: white;
+    color: #5a1212;
+    box-shadow: 0 0px 0px rgb(255, 255, 255);
+}
+.buttons a button:active{
+    background-color: #b52828;
+    color: aquamarine;
+}
